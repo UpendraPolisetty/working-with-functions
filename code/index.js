@@ -79,19 +79,18 @@ minToSec(2) ➞ 120
   - 21 years or older — return "drink throat-piercing vodka"
   
   */
-  function bmiCheck(weight,height){
-    let BMI = weight / (height * height);
-    if(BMI<18.5){
-        return `Underweight`
-    }else if(BMI>=18.5 && BMI<24.9){
-        return `Normal`
-    }else if(BMI>=25 && BMI<29.9){
-        return `Overweight`
-    }else if(BMI>=30){
-        return `Obese`
+  function drinks(age,drink){
+    if(age<14){
+        return `drink fruit juice`
+    }else if(age<18){
+        return `drink soda`
+    }else if(age<21){
+        return `drink fruit-flavored beer`
+    }else if(age>21){
+        return `drink throat-piercing vodka`
     }
 }
-bmiCheck()
+drinks()
   
   
   /* 4. Add two numers or string
